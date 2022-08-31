@@ -11,11 +11,11 @@ class raw_env(SimpleEnv):
 
 
 # env = make_env(raw_env)
-env = raw_env(100)
+env = raw_env(1000)
 
 # parallel_env = parallel_wrapper_fn(env)
 state = env.reset()
-for _ in range(10):
+for _ in range(1000):
     action = 0
     state = env.step(action)
     print(state)
